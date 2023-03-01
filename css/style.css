@@ -1,0 +1,257 @@
+@charset "utf-8";
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+/* Висота сторінки */
+html{
+  height: 100%;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  color: #333;
+  background: #f7f7f7;
+  font-size: 1em;
+  font-family: "Segoe UI", sans-serif;
+  line-height: 135%;
+}
+
+a {
+  color: #f48b8b;
+  text-decoration: none;
+  transition: all.6s ease;
+  -moz-transition: all.6s ease;
+  -webkit-transition: all.6s ease;
+  -ms-transition: all.6s ease;
+}
+
+
+a:hover {
+  color: #8b9ff5;
+  text-decoration: none;
+  transition: all.6s ease;
+  -moz-transition: all.6s ease;
+  -webkit-transition: all.6s ease;
+  -ms-transition: all.6s ease;
+}
+
+a:active {color: #8ce4a6}
+
+header, footer{
+  width: 98%;
+  background-color: #fff;
+  float: left;
+}
+
+header {
+  border-bottom: 2px solid silver;
+  padding: 1%;
+  margin-bottom: 80px;
+  background-color: #e2dee3;
+}
+
+::selection{background: #f58b8b; color: #fff}
+::-moz-selection{background: #f58b8b; color: #fff}
+
+
+#page-wrap:after {
+  content: "";
+  display: block;
+  height: 10px;
+}
+
+#page-wrap{
+  min-height: 120%;
+  margin-bottom: -10px;
+
+  background-image: url("../img/drohobych.jpg");
+  background-color: rgba(6,32,51,.8);
+  background-attachment: fixed !important;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0;
+}
+
+#logo{
+  font-size: 2em;
+  font-family: Oswald, sans-serif;
+  color: #6cc;
+}
+
+.contact {
+  font-size: 1.5em;
+  font-family: Oswald, sans-serif;
+  margin-left: 20px;
+}
+
+.container {
+  margin-top: 40px;
+  padding: 75px 0;
+  margin: 0 auto;
+  width: 1140px;
+}
+
+h1{
+  text-align: center;
+  margin-bottom: 45px;
+  font-family: "Oswald", sans-serif;
+  font-size: 35px;
+  text-transform: uppercase;
+  color: #141414;
+}
+
+#wrapper #articles article h2{
+  margin-left: 5%;
+  width: 90%;
+  font-weight: normal;
+  font-size: 1.7em;
+  color: #4a4a4a;
+  text-align: center;
+
+}
+
+
+h2 {
+  
+  text-align: center;
+  margin-bottom: 30px;
+  font-family: "Oswald", sans-serif;
+  font-size: 40px;
+  color: #424242;
+}
+
+#wrapper{
+  float: left;
+  width: 100%;
+  margin-top: 20px;
+}
+
+#wrapper #articles{
+  float: left;
+  width: 80%;
+  margin-left: 10%;
+}
+
+#wrapper #articles article{
+  float: left;
+  width: 31.33333%;
+  border: 1px solid silver;
+  box-sizing: border-box;
+  border-radius: 5px;
+  background-color: #fafafa;
+  margin-right: 2%;
+  min-height: 400px;
+  margin-bottom: 150px;
+}
+
+#wrapper #articles article img{
+  width: 100%;
+  height: 200px;
+  border-radius: 5px 5px 0px 0px;
+  border-bottom: 1px solid silver;
+  margin-bottom: 10px;
+}
+
+
+#wrapper #container h2{
+  font-weight: normal;
+  font-size: 30px;
+  color: ##141414;
+  text-align: center;
+}
+
+#wrapper #articles article h2{
+  margin-left: 5%;
+  width: 90%;
+  font-weight: normal;
+  font-size: 1.7em;
+  color: #4a4a4a;
+  text-align: center;
+
+}
+
+#wrapper #articles article p{
+  width: 80%;
+  margin-left: 10%;
+  /* Обмеженя тексту */
+  display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+}
+
+#wrapper #articles article a{
+  padding: 7px 5px;
+  background-color: #ed7b7b;
+  margin-left: 5%;
+  border-radius: 50px;
+  color: #fff;
+  float: left;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#wrapper #articles article a:hover{background-color: #7Feb6d;}
+
+article{
+  margin-bottom: 90px;
+}
+
+
+
+footer{
+  padding: 1%;
+  border-top: 2px solid silver;
+  margin-top: 10px;
+  padding-bottom: 2%;
+}
+
+footer:after {
+  height: 10px;
+}
+
+
+.gallery-wrap {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 70vh;
+  margin-top: 20px;
+}
+
+.item {
+  flex: 1; /* відношення */
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: none; /* повтор */
+  transition: flex 0.8s ease; /* час збільшення */
+}
+.item:hover {
+  flex: 7; /* збільшення відношення */
+}
+
+.item-1 {
+  background-image: url('../img/lavka_foto.jpg');
+}
+
+.item-2 {
+  background-image: url("../img/sunsg.jpg");
+}
+
+.item-3 {
+  background-image: url("../img/ratusha.jpg");
+}
+
+.item-4 {
+  background-image: url("../img/bruno.jpg");
+}
+
+.item-5 {
+  background-image: url("../img/yrii.jpg");
+}
